@@ -32,7 +32,7 @@ def accumulator(i: Iterable[int]) -> Iterable[tuple[int, Optional[int]]]:
 #     )[1],
 #     (s := stdin.readline().strip().split(" "))
 # ))
-reverses: Iterable[tuple[int, Optional[int]]] = accumulator(map(int,(s := stdin.readline().strip().split(" "))))
+reverses: Iterable[tuple[int, Optional[int]]] = accumulator(map(int, stdin.readline().strip().split(" ")))
 
 for start, end in reverses:
     reverse(arr, start, end)
